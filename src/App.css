@@ -1,6 +1,13 @@
 .App {
   text-align: center;
+  max-width: 100%;
+  overflow-x: hidden;
 }
+
+body {
+  overflow-x: hidden;
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -33,6 +40,314 @@
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(350deg);
   }
+}
+
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0); 
+}
+
+.navbar-brand {
+  font-weight: bolder;
+  color: #FF6B00 !important;
+  font-size: 30px !important;
+}
+
+
+.navbar-nav .nav-link,
+.dropdown-item {
+  color: #ffffff !important; 
+  font-family: sans-serif;
+}
+
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 9px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #FF6B00; 
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+
+
+
+.App {
+  font-family: sans-serif;
+}
+
+.navbar {
+  background-color: #0000007c;
+  padding: 10px;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 20px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.section1 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111111; 
+}
+
+.section2 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111111; 
+}
+
+.section3 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111111; 
+}
+
+.section4 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111111; 
+  
+}
+
+/* .section1:nth-child(even) {
+  background-color: #484848; 
+}
+
+.section:nth-child(odd) {
+  background-color: #232323; 
+} */
+
+/* App.css */
+.contact-container {
+  margin-top: 2rem; /* Adjust the margin as needed */
+}
+
+
+/* home text */
+
+.intro-text {
+  margin-bottom: 20px; 
+  color: white;
+  position: relative;
+  right: 500px;
+
+}
+
+.intro-text p {
+  margin-bottom: 1px; 
+ 
+}
+
+
+
+.intro-text .name {
+  color:#FF6B00;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.man {
+  position: absolute;
+  top: -100%;
+  left: 650px !important;
+}
+
+.man.popup img {
+  animation-name: popupAnimation;
+  animation-duration: 1s;
+}
+
+@keyframes popupAnimation {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+/* About */
+
+.man1 {
+  position: absolute;
+  bottom: -90%;
+  left:100px;
+}
+
+.about-text {
+  color: white  ;
+  position: absolute;
+  left: 67%;
+  bottom: -80%;
+}
+
+.big-M {
+  color: white;
+  font-weight: bold;
+  font-size: 100px;
+  position: relative;
+  left: 210%;
+  bottom: 10vh;
+}
+
+
+
+
+
+
+
+/* Education */
+
+.images-educ img {
+  margin-right: 10px;
+  transition: transform 0.3s ease; /* Add transition effect for smooth animation */
+}
+
+.images-educ img:hover {
+  transform: scale(1.1); /* Increase the size of the image on hover */
+}
+
+
+.images-educ {
+  display: flex;
+  bottom: -190%;
+  position: absolute;
+}
+
+.image-container {
+  margin-right: 20px;
+}
+
+.image-container img {
+  display: block;
+}
+
+.image-container > div {
+  margin-top: 10px;
+}
+
+.educ-text {
+  color: #FF6B00;
+}
+
+.educ-description {
+  color: white;
+}
+
+
+/* contact */
+
+.contact-text {
+  margin-bottom: 20px; 
+  color: white;
+  position: absolute;
+  right: 920px;
+  top: 335vh;
+}
+
+.contact-text p {
+  margin-bottom: 1px; 
+ 
+}
+
+
+
+.contact-text .contact {
+  color:#FF6B00;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+
+
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-text {
+  flex: 0 1 45%; /* Adjust width as needed */
+}
+
+.form-container {
+  
+  color: white;
+  padding: 20px;
+  width: 250%;
+  position: relative;
+  left: 100%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 250%;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  height: 40px; /* Set the height to match the width */
+  min-height: 40px; /* Set a minimum height */
+}
+
+button[type="submit"] {
+  background-color: #FF6B00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #FF8C3A;
+}
+
+.textarea {
+  height: 120px; /* Adjust the height of the textarea if needed */
 }
