@@ -185,6 +185,8 @@ body {
 .man.popup img {
   animation-name: popupAnimation;
   animation-duration: 1s;
+  margin-top: -230px;
+  margin-left: -150px;
 }
 
 @keyframes popupAnimation {
@@ -203,8 +205,9 @@ body {
 
 .man1 {
   position: absolute;
-  bottom: -90%;
+  bottom: -100%;
   left:100px;
+  margin-top: -150px;
 }
 
 .about-text {

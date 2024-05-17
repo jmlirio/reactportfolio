@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import MIBorange from './MIBorange.png';
+import matty from './matty.png';
 
 function Home() {
   return (
@@ -13,7 +13,7 @@ function Home() {
 
 
     <div className="man popup">
-      <img src={MIBorange} alt="Matthew's Image"/>
+      <img src={matty} alt="Matthew's Image"/>
     </div>
 
 

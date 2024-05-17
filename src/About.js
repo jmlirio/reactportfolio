@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import MIB from './MIB.png';
+import matt from './matt.png';
 
 function About() {
   return (
     <div>
       <div className="man1">
-      <img src={MIB}/>
+      <img src={matt}/>
       </div>
 
       <div className="big-M">
